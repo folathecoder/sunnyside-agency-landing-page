@@ -1,0 +1,109 @@
+:root {
+
+/* Color */
+--color-neutral: hsl(0, 0%, 100%); 
+--color-font: hsl(212, 27%, 19%);
+--color-bg-1: hsl(168, 34%, 41%);
+--color-bg-2: hsl(51, 100%, 49%);
+--color-bg-3: hsl(7, 99%, 70%);
+--color-bg-4: hsl(167, 40%, 35%);
+--color-bg-5: hsl(198, 62%, 26%);
+--color-bg-footer: hsl(168, 34%, 41%);
+
+/* Font Weights */
+--font-semi-bold: 600;
+--font-bold: 700;
+--font-extra-bold: 900;
+
+/* Font Family */
+--font-primary: 'Barlow', sans-serif;
+--font-secondary: 'Fraunces', serif;
+
+}
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role="list"],
+ol[role="list"] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations and transitions for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+   scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Set core body defaults */
+body {
+    text-rendering: optimizeSpeed;
+    line-height: 1.5;
+    background-color: red;
+    font-size: 1.1rem;
+    line-height: 2rem;
+    font-weight: var(--font-semi-bold);
+}
+
+.hero {
+  background-color: lime;
+  min-height: 20rem;
+}
+.hero-inner {
+  background-color: rgb(255, 0, 179);
+  min-height: 20rem;
+}
+
